@@ -1,0 +1,15 @@
+{
+    "elements": {
+        "h:panelGrid": {
+            "attributes": {
+                "border": {},
+                "columns": {}
+            }
+        },
+        "h:body": {},
+        "h:head": {},
+        "title": {},
+        "h:form": {}
+    },
+    "attributes": {}
+}

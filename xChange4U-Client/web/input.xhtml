@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Service Input Form</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2" border="1">
+                <f:facet name ="header"> 
+                    <h:outputText value ="Currency Conversion Service"/>
+                </f:facet>
+                <h:outputLabel value="#{serviceBean.parameterName} Enter Value:"/>
+                <h:inputText value="#{serviceBean.parameterValue}" />
+                <h:commandButton value="Dollar To Euro" action="#{serviceBean.convertDollarToEuro()}"/>
+                <h:commandButton value="Dollar To Pound" action="#{serviceBean.convertDollarToPound()}"/>
+                <h:commandButton value="Dollar To Yen" action ="#{serviceBean.convertDollarToYen()}"/>
+                <h:commandButton value="Euro To Dollar" action ="#{serviceBean.convertEuroToDollar()}"/>
+                <h:commandButton value="Euro To Pound" action ="#{serviceBean.convertEuroToPound()}"/>
+                <h:commandButton value="Euro To Yen" action ="#{serviceBean.convertEuroToYen()}"/>
+                <h:commandButton value="Pound To Dollar" action ="#{serviceBean.convertPoundToDollar()}"/>
+                <h:commandButton value="Pound To Euro" action ="#{serviceBean.convertPoundToEuro()}"/>
+                <h:commandButton value="Pound To Yen" action ="#{serviceBean.convertPoundToYen()}"/>
+                <h:commandButton value="Yen To Dollar" action ="#{serviceBean.convertYenToDollar()}"/>
+                <h:commandButton value="Yen To Euro" action ="#{serviceBean.convertYenToEuro()}"/>
+                <h:commandButton value="Yen To Pound" action ="#{serviceBean.convertYenToPound()}"/>
+                <f:facet name ="footer">
+                    <h:commandButton action="#{serviceBean.clientServiceConvertor}" value="Calculate"/>
+                </f:facet>
+            </h:panelGrid>
+            <h:outputText value="The Value returned by the service is: "/>
+            <h:outputText value="#{serviceBean.result}" /><br/>
+            <h:commandButton value= "Back" action="index.xhtml"/>
+        </h:form>
+    </h:body>
+</html>
+

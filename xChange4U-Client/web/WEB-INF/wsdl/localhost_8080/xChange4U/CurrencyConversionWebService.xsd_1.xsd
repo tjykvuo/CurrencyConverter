@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices/">
+
+<xs:element name="dollarToEuro" type="tns:dollarToEuro"/>
+
+<xs:element name="dollarToEuroResponse" type="tns:dollarToEuroResponse"/>
+
+<xs:element name="dollarToPound" type="tns:dollarToPound"/>
+
+<xs:element name="dollarToPoundResponse" type="tns:dollarToPoundResponse"/>
+
+<xs:element name="dollarToYen" type="tns:dollarToYen"/>
+
+<xs:element name="dollarToYenResponse" type="tns:dollarToYenResponse"/>
+
+<xs:element name="euroToDollar" type="tns:euroToDollar"/>
+
+<xs:element name="euroToDollarResponse" type="tns:euroToDollarResponse"/>
+
+<xs:element name="euroToPound" type="tns:euroToPound"/>
+
+<xs:element name="euroToPoundResponse" type="tns:euroToPoundResponse"/>
+
+<xs:element name="euroToYen" type="tns:euroToYen"/>
+
+<xs:element name="euroToYenResponse" type="tns:euroToYenResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="poundToDollar" type="tns:poundToDollar"/>
+
+<xs:element name="poundToDollarResponse" type="tns:poundToDollarResponse"/>
+
+<xs:element name="poundToEuro" type="tns:poundToEuro"/>
+
+<xs:element name="poundToEuroResponse" type="tns:poundToEuroResponse"/>
+
+<xs:element name="poundToYen" type="tns:poundToYen"/>
+
+<xs:element name="poundToYenResponse" type="tns:poundToYenResponse"/>
+
+<xs:element name="yenToDollar" type="tns:yenToDollar"/>
+
+<xs:element name="yenToDollarResponse" type="tns:yenToDollarResponse"/>
+
+<xs:element name="yenToEuro" type="tns:yenToEuro"/>
+
+<xs:element name="yenToEuroResponse" type="tns:yenToEuroResponse"/>
+
+<xs:element name="yenToPound" type="tns:yenToPound"/>
+
+<xs:element name="yenToPoundResponse" type="tns:yenToPoundResponse"/>
+
+<xs:complexType name="yenToDollar">
+<xs:sequence>
+<xs:element name="yen" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="yenToDollarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToEuro">
+<xs:sequence>
+<xs:element name="dollar" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToEuroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToYen">
+<xs:sequence>
+<xs:element name="euro" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToYenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToDollar">
+<xs:sequence>
+<xs:element name="pound" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToDollarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="yenToEuro">
+<xs:sequence>
+<xs:element name="yen" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="yenToEuroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToPound">
+<xs:sequence>
+<xs:element name="euro" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToPoundResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToYen">
+<xs:sequence>
+<xs:element name="yen" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToYenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="yenToPound">
+<xs:sequence>
+<xs:element name="yen" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="yenToPoundResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToEuro">
+<xs:sequence>
+<xs:element name="pound" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="poundToEuroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToPound">
+<xs:sequence>
+<xs:element name="dollar" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToPoundResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToDollar">
+<xs:sequence>
+<xs:element name="euro" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="euroToDollarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToYen">
+<xs:sequence>
+<xs:element name="dollar" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dollarToYenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

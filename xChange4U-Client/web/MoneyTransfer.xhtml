@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Web Services Client</title>
+    </h:head>
+    <h:body>
+        <h:form>
+           <h:panelGrid columns="2" border="1" >
+                <f:facet name="header">
+                    <h:outputText value="Money Transfer"/>
+                </f:facet>
+               <h:outputText value="Name of Sender"/>
+               <h:inputText value="#{mainServiceBean.nameofsender}"/>
+               <h:outputText value="Name of Reciever"/>
+               <h:inputText value="#{mainServiceBean.nameofreciever}"/>
+               <h:outputText value="Origin of the money"/>
+               <h:inputText value="#{mainServiceBean.originofthemoney}"/>
+               <h:outputText value="Destination of the money"/>
+               <h:inputText value="#{mainServiceBean.destinationofthemoney}"/>
+               <h:outputText value="The Currency Conversion Rate"/>
+               <h:inputText value="#{mainServiceBean.currencyconversionrate}"/>
+               <h:outputText value="Sender's Currency"/>
+               <h:inputText value="#{mainServiceBean.sendercurrency}"/>
+               <h:outputText value="Reciver's Currency"/>
+               <h:inputText value="#{mainServiceBean.receivercurrency}"/>
+               <h:outputText value="The amount to be transferred"/>
+               <h:inputText value="#{mainServiceBean.amounttobetransferred}"/>
+               <h:outputText value="Transfer Fee"/>
+               <h:inputText value="#{mainServiceBean.transferfee}"/>
+               <h:outputText value="Amount to be received"/>
+               <h:inputText value="#{mainServiceBean.amounttobereceived}"/>
+               <f:facet name="footer">
+                   <h:commandButton action="#{mainServiceBean.clientService}" value="Transfer Now"/>
+               </f:facet>
+             </h:panelGrid>
+            <h:outputText value="The result is :#{mainServiceBean.result}"/>
+            <h:commandButton value= "Back" action="index.xhtml"/>
+        </h:form>
+    </h:body>
+</html>
+
